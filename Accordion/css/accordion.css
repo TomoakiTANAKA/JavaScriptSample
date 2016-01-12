@@ -1,0 +1,32 @@
+/*** 全体 ***/
+.main {
+    width: 100%;
+    text-align: center;
+}
+
+#contents{
+    width:50%;
+    margin: 0 auto;
+}
+
+/*** accordion ***/
+#accordion {
+    font-size: 20px;
+}
+
+#accordion dt {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border:1px solid #000000;
+    cursor: pointer;
+}
+
+#accordion dt:hover {
+    background-color: antiquewhite;
+}
+
+
+#accordion dd {
+    padding-bottom: 10px;
+    display: none;
+}

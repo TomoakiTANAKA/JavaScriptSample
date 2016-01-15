@@ -1,0 +1,31 @@
+.tagpaper{
+    width:500px;
+    height:500px;
+    background-color: beige;
+    /*margin: 0 auto;*/
+    position: relative; /* 位置指定（普通の位置に表示） */
+}
+
+/*:after擬似要素は、要素の直後に内容を挿入する際に使用します*/
+.tagpaper:after {
+    width:500px; /* 擬似要素の幅  */
+    height:490px; /* 擬似要素の高さ  */
+    content: ""; /* 擬似要素の内容 */
+    position: absolute; /* 位置指定 */
+    top: 0px; /* 上から */
+    right: 3px; /* 右から */
+    -webkit-box-shadow: 0 5px 5px #555 ; /* 影（Chrome、Safari） */
+    -moz-box-shadow: 0 5px 5px #555 ; /* 影（FireFox） */
+    box-shadow: 0 5px 5px #555 ; /* 影（CSS3） */
+    -webkit-transform: rotate(2deg); /* ズラす（Chrome、Safari） */
+    -moz-transform: rotate(2deg); /* ズラす（FireFox） */
+    -o-transform: rotate(2deg); /* ズラす（Opera） */
+    -ms-transform: rotate(2deg); /* ズラす（IE） */
+    transform: rotate(2deg); /* ズラす（CSS3） */
+    z-index: -1; /* 重なり順を背面へ */
+}
+
+.tagpaper > p{
+    text-align: center;
+    font-size: 36px;
+}
